@@ -30,7 +30,10 @@ window.addEventListener("DOMContentLoaded", function() {
 
 <div *ngIf="logged; else #isAnonymous" id="my-embedded-typeform" style="width: 100%; height: 300px;">
 </div>
+
 <ng-template #isAnonymous>
   Please login before being able to access the Private Citizen Interface.
+
   <a href="https://othman-ben.github.io/StayInTouch/user_login" class="btn">User Login</a>
+  
 </ng-template>
