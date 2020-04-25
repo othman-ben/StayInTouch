@@ -1,2 +1,22 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+
+<script>
+var firebaseConfig = {
+apiKey: "AIzaSyDy_NDLhK4_wnUpP7_x4w9Q4cBLjTJINac",
+authDomain: "stayintouch-1fd88.firebaseapp.com",
+databaseURL: "https://stayintouch-1fd88.firebaseio.com",
+projectId: "stayintouch-1fd88",
+storageBucket: "stayintouch-1fd88.appspot.com",
+messagingSenderId: "699177114486",
+appId: "1:699177114486:web:ff3d62b93a7012b4743857"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+</script>
+
+
 <script src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth__en.js"></script>
 <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css" />
