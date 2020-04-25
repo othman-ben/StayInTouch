@@ -4,6 +4,7 @@
 {% include firebase.html %}
 <script src="https://embed.typeform.com/embed.js" type="text/javascript"></script>
 
+<div ng-app="myNgApp">
 <script>
 $scope.checkLocalStorage = firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
@@ -35,5 +36,7 @@ window.addEventListener("DOMContentLoaded", function() {
   Please login before being able to access the Private Citizen Interface.
 
   <a href="https://othman-ben.github.io/StayInTouch/user_login" class="btn">User Login</a>
+
+</div>
 
 </div>
