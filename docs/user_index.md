@@ -36,4 +36,4 @@ window.addEventListener("DOMContentLoaded", function() {
 
   <a href="https://othman-ben.github.io/StayInTouch/user_login" class="btn">User Login</a>
 
-</ng-template>
+</div>
