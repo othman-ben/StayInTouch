@@ -36,8 +36,6 @@ window.addEventListener("DOMContentLoaded", function() {
 <div ng-app="myApp" ng-if="!checkLocalStorage()">
   Please login before being able to access the Private Citizen Interface.
 
-  <section class="page-header">
-  <a href="https://othman-ben.github.io/StayInTouch/user_login" class="btn">User Login</a>
-  </section>
+  <button class="btn" name="button" onclick="https://othman-ben.github.io/StayInTouch/user_login">User Login</button>
 
 </div>
