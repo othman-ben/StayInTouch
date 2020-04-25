@@ -1,3 +1,6 @@
+<!-- JS -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+
 {% include firebase.html %}
 <script src="https://embed.typeform.com/embed.js" type="text/javascript"></script>
 
@@ -35,5 +38,5 @@ window.addEventListener("DOMContentLoaded", function() {
   Please login before being able to access the Private Citizen Interface.
 
   <a href="https://othman-ben.github.io/StayInTouch/user_login" class="btn">User Login</a>
-  
+
 </ng-template>
