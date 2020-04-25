@@ -23,8 +23,15 @@ firebase.initializeApp(firebaseConfig);
       // FirebaseUI config.
       var uiConfig = {
         signInSuccessUrl: 'https://othman-ben.github.io/StayInTouch/user_index',
-        signInOptions: [
-          firebase.auth.PhoneAuthProvider.PROVIDER_ID
+        signInOptions: [{
+          provider: firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+          recaptchaParameters: {
+            type: 'image',
+            size: 'invisible',
+            badge: 'inline'
+          },
+          defaultCountry: 'FR'
+        }
         ],
         // tosUrl and privacyPolicyUrl accept either url string or a callback
         // function.
