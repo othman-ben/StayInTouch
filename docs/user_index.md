@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", function() {
   // When instantiating a widget embed, you must provide the DOM element
   // that will contain your typeform, the URL of your typeform, and your
   // desired embed settings
-  window.typeformEmbed.makeWidget(el, "https://admin.typeform.com/lu4siV", {
+  window.typeformEmbed.makeWidget(el, "https://benoitgufflet.typeform.com/to/lu4siV", {
     hideFooter: true,
     hideHeaders: true,
     opacity: 0
@@ -29,9 +29,9 @@ window.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
-<div ng-if="logged" id="my-embedded-typeform" style="width: 100%; height: 300px;"></div>
+<div ng-if="this.logged" id="my-embedded-typeform" style="width: 100%; height: 300px;"></div>
 
-<div ng-if="!logged">
+<div ng-if="!this.logged">
   Please login before being able to access the Private Citizen Interface.
 
   <a href="https://othman-ben.github.io/StayInTouch/user_login" class="btn">User Login</a>
