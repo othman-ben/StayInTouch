@@ -4,8 +4,9 @@
 {% include firebase.html %}
 <script src="https://embed.typeform.com/embed.js" type="text/javascript"></script>
 
-<div ng-app="myNgApp">
 <script>
+var app = angular.module('myApp', []);
+
 $scope.checkLocalStorage = firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     return true
@@ -30,9 +31,9 @@ window.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
-<div ng-if="checkLocalStorage()" id="my-embedded-typeform" style="width: 100%; height: 500px;"></div>
+<div ng-app="myApp" ng-if="checkLocalStorage()" id="my-embedded-typeform" style="width: 100%; height: 500px;"></div>
 
-<div ng-if="!checkLocalStorage()">
+<div ng-app="myApp" ng-if="!checkLocalStorage()">
   Please login before being able to access the Private Citizen Interface.
 
   <a href="https://othman-ben.github.io/StayInTouch/user_login" class="btn">User Login</a>
