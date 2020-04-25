@@ -7,9 +7,9 @@
 <script>
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
-    this.logged=True
+    this.logged=true
   } else {
-    this.logged=False
+    this.logged=false
   }
 });
 </script>
@@ -29,12 +29,9 @@ window.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
-<div id="my-embedded-typeform" style="width: 100%; height: 300px;"></div>
+<div ng-if="logged" id="my-embedded-typeform" style="width: 100%; height: 300px;"></div>
 
-<div *ngIf="logged; else #isAnonymous" id="my-embedded-typeform" style="width: 100%; height: 300px;">
-</div>
-
-<ng-template #isAnonymous>
+<div ng-if="!logged">
   Please login before being able to access the Private Citizen Interface.
 
   <a href="https://othman-ben.github.io/StayInTouch/user_login" class="btn">User Login</a>
