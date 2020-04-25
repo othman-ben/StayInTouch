@@ -12,7 +12,7 @@
           recaptchaParameters: {
             type: 'image',
             size: 'invisible',
-            badge: 'inline'
+            badge: 'bottom-left'
           },
           defaultCountry: 'FR'
         }
