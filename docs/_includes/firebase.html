@@ -2,6 +2,9 @@
 <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
 
+<script src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth__en.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css" />
+
 <script>
   const firebaseConfig = {
   apiKey: "AIzaSyDy_NDLhK4_wnUpP7_x4w9Q4cBLjTJINac",
@@ -14,7 +17,7 @@
 };
 
 // Initialize Firebase
-//firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 var database = firebase.database();
 
@@ -37,6 +40,3 @@ function writeUserData(phone, name, id, timestamp) {
 }
 
 </script>
-
-<script src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth__en.js"></script>
-<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css" />
