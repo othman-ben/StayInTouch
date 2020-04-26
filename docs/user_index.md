@@ -1,6 +1,6 @@
 {% include firebase.html %}
 
-{% include typeform.html url="https://benoitgufflet.typeform.com/to/lu4siV" %}
+{% include typeform_user.html %}
 
 {% include authentication.html %}
 
