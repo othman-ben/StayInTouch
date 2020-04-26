@@ -1,1 +1,6 @@
 theme: jekyll-theme-cayman
+page_gen:
+  -data: "businesses"
+  -template: "default"
+  -name: "bid"
+  -dir: "businesses"
