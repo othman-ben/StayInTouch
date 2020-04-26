@@ -18,8 +18,7 @@
         // Terms of service url/callback.
         tosUrl: 'https://othman-ben.github.io/StayInTouch/TermsServices',
         // Privacy policy url/callback.
-        privacyPolicyUrl: function() {
-          window.location.assign('https://othman-ben.github.io/StayInTouch/PrivacyPolicy');
+        privacyPolicyUrl: 'https://othman-ben.github.io/StayInTouch/PrivacyPolicy'
         }
       };
 
