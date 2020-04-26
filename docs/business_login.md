@@ -19,7 +19,6 @@
         tosUrl: 'https://othman-ben.github.io/StayInTouch/TermsServices',
         // Privacy policy url/callback.
         privacyPolicyUrl: 'https://othman-ben.github.io/StayInTouch/PrivacyPolicy'
-        }
       };
 
       // Initialize the FirebaseUI Widget using Firebase.
