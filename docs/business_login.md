@@ -10,7 +10,8 @@
         signInSuccessUrl: 'https://othman-ben.github.io/StayInTouch/business_info',
         signInOptions: [
           // Leave the lines as is for the providers you want to offer your users.
-          firebase.auth.EmailAuthProvider.PROVIDER_ID
+          firebase.auth.EmailAuthProvider.PROVIDER_ID,
+          requireDisplayName: false
         ],
         // tosUrl and privacyPolicyUrl accept either url string or a callback
         // function.
@@ -23,7 +24,7 @@
       // Initialize the FirebaseUI Widget using Firebase.
       var ui = firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
         .then(function(){
-          return new firebaseui.auth.AuthUI();
+          return new firebaseui.auth.AuthUI(firebase.auth());
         })
 
 
