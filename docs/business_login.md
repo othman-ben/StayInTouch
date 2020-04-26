@@ -21,9 +21,9 @@
       };
 
       // Initialize the FirebaseUI Widget using Firebase.
-      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      var ui = new firebaseui.auth.AuthUI(firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL));
       // The start method will wait until the DOM is loaded.
-      ui.start('#firebaseui-auth-container', uiConfig);$
+      ui.start('#firebaseui-auth-container', uiConfig);
 </script>
 
 <div id="firebaseui-auth-container"></div>
