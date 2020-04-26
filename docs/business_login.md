@@ -9,10 +9,7 @@
       var uiConfig = {
         signInSuccessUrl: 'https://othman-ben.github.io/StayInTouch/business_info',
         signInOptions: [
-          {
-            provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
-            requireDisplayName: false
-          }
+          provider: firebase.auth.EmailAuthProvider.PROVIDER_ID
         ],
 
         // Terms of service url/callback.
@@ -26,7 +23,6 @@
         .then(function(){
           return new firebaseui.auth.AuthUI(firebase.auth());
         })
-
 
       // The start method will wait until the DOM is loaded.
       ui.start('#firebaseui-auth-container', uiConfig);
