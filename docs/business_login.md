@@ -2,6 +2,8 @@
 
 {% include firebase.html %}
 
+{% include authentication.html %}
+
 <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css" />
 <script type="text/javascript">
       // FirebaseUI config.
