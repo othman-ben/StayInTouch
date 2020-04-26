@@ -4,7 +4,6 @@
 
 {% include authentication.html %}
 
-<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css" />
 <script type="text/javascript">
       // FirebaseUI config.
       var uiConfig = {
@@ -22,7 +21,7 @@
       };
 
       // Initialize the FirebaseUI Widget using Firebase.
-      var ui = new firebaseui.auth.AuthUI(firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL));
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
       // The start method will wait until the DOM is loaded.
       ui.start('#firebaseui-auth-container', uiConfig);$
 </script>
