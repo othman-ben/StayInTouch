@@ -6,7 +6,7 @@
 <script type="text/javascript">
       // FirebaseUI config.
       var uiConfig = {
-        signInSuccessUrl: 'https://othman-ben.github.io/StayInTouch/business_index',
+        signInSuccessUrl: 'https://othman-ben.github.io/StayInTouch/business_info',
         signInOptions: [
           // Leave the lines as is for the providers you want to offer your users.
           firebase.auth.EmailAuthProvider.PROVIDER_ID
