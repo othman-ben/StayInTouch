@@ -11,14 +11,14 @@ window.addEventListener("DOMContentLoaded", function() {
   // When instantiating a widget embed, you must provide the DOM element
   // that will contain your typeform, the URL of your typeform, and your
   // desired embed settings
-  window.typeformEmbed.makeWidget(el, XXX, {
+  window.typeformEmbed.makeWidget(el, "https://benoitgufflet.typeform.com/to/B3ba59", {
     hideFooter: true,
     hideHeaders: true,
     opacity: 0,
     onSubmit: function(){
       var request = new XMLHttpRequest()
       var new_json = []
-      request.open('GET', 'XXX?page_size=1&completed=true', true)
+      request.open('GET', 'https://api.typeform.com/forms/B3ba59/responses?page_size=1&completed=true', true)
 
       request.send()
 
@@ -42,7 +42,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
       writeBusinessData(ID, new_json[0], new_json[1], new_json[2], new_json[3], new_json[4])
 
-      window.location.href = 'https://othman-ben.github.io/StayInTouch/thank_you';
+      window.location.href = 'https://othman-ben.github.io/StayInTouch/get_qr_code';
     }
   });
 });

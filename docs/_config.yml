@@ -3,4 +3,4 @@ page_gen:
   -data: "businesses"
   -template: "default"
   -name: "bid"
-  -dir: "businesses"
+  -dir: "business"

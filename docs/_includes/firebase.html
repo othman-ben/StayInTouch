@@ -17,13 +17,21 @@ firebase.initializeApp(firebaseConfig);
 
 var database = firebase.database();
 
-function writeBusinessData(BID, name, business_type, phone, email, siret) {
-  database.ref('businesses/' + BID).set({
+function writeBusinessData(id, name, registration_nbr, address, business_type, phone, email) {
+  database.ref('businesses/' + id).set({
     name: name,
-    type: type,
+    registration_nbr: registration_nbr,
+    address: address,
+    business_type: type,
     phone: phone,
-    email: email,
-    siret: siret
+    email: email
+  });
+}
+
+function writeUserData(phone, name, id, timestamp) {
+  database.ref('users/' + phone + '/' + timestamp).set({
+    name: name,
+    visited: id
   });
 }
 

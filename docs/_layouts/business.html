@@ -35,22 +35,9 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      {% include firebase.html %}
+      {% include typeform_user.html %}
 
-      {% include typeform.html %}
-
-      {% include authentication.html %}
-
-      <div ng-app="myApp" ng-if="checkLocalStorage()" id="my-embedded-typeform" style="width: 100%; height: 500px;"></div>
-
-      <div ng-app="myApp" ng-if="!checkLocalStorage()">
-        Please login before being able to access the Private Citizen Interface.
-
-
-
-        <button name="button" onclick="https://othman-ben.github.io/StayInTouch/user_login">User Login</button>
-
-      </div>
+      <div id="my-embedded-typeform" style="width: 100%; height: 500px;"></div>
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
