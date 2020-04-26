@@ -9,7 +9,8 @@
       var uiConfig = {
         signInSuccessUrl: 'https://othman-ben.github.io/StayInTouch/business_info',
         signInOptions: [
-          provider: firebase.auth.EmailAuthProvider.PROVIDER_ID
+          // Leave the lines as is for the providers you want to offer your users.
+          firebase.auth.EmailAuthProvider.PROVIDER_ID
         ],
 
         // Terms of service url/callback.
