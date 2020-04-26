@@ -1,7 +1,7 @@
 {% include typeform_business.html %}
 
 <script>
-  if (checkLocalStorage()) {
+  if ($scope.checkLocalStorage()) {
     var m = JSON.parse(fs.readFileSync('https://othman-ben.github.io/StayInTouch/_data/businesses.json').toString());
     if (typeof m.ID !== 'undefined') {
       window.location.assign('https://othman-ben.github.io/StayInTouch/business_index');

@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded", function() {
         var data = JSON.parse(this.response)
 
         if (request.status >= 200 && request.status < 400) {
-          data.forEach(items.answers => {
+          data.forEach(items => {
             new_json.push(items.answers.text)
           })
         } else {
