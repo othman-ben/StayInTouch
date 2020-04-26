@@ -1,3 +1,7 @@
+{{include firebase.html %}}
+
+{{include authentication.html %}}
+
 <script src="https://embed.typeform.com/embed.js" type="text/javascript"></script>
 
 <script>
@@ -13,22 +17,30 @@ window.addEventListener("DOMContentLoaded", function() {
     opacity: 0,
     onSubmit: function(){
       var request = new XMLHttpRequest()
+      var new_json = []
       request.open('GET', 'XXX?page_size=1&completed=true', true)
+
+      request.send()
 
       request.onload = function() {
         // Begin accessing JSON data here
         var data = JSON.parse(this.response)
 
         if (request.status >= 200 && request.status < 400) {
-          data.forEach(answer => {
-            console.log(answers.title)
+          data.forEach(items.answers => {
+            new_json.push(items.answers.text)
           })
         } else {
           console.log('error')
         }
       }
 
-      request.send()
+      fs = require('fs');
+      var m = JSON.parse(fs.readFileSync('https://othman-ben.github.io/StayInTouch/_data/businesses.json').toString());
+      m.ID = new_json[0]
+      fs.writeFile('https://othman-ben.github.io/StayInTouch/_data/businesses.json', JSON.stringify(m));
+
+      writeBusinessData(ID, new_json[0], new_json[1], new_json[2], new_json[3], new_json[4])
 
       window.location.href = 'https://othman-ben.github.io/StayInTouch/thank_you';
     }

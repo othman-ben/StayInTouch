@@ -2,12 +2,15 @@
 
 <script>
 var app = angular.module('myApp', []);
+var ID = null
 
 $scope.checkLocalStorage = firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
+    ID = user.uid;
     return true
   } else {
     return false
   }
 });
+
 </script>

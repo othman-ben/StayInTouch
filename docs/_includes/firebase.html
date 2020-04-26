@@ -14,6 +14,19 @@
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
+var database = firebase.database();
+
+function writeBusinessData(BID, name, business_type, phone, email, siret) {
+  database.ref('businesses/' + BID).set({
+    name: name,
+    type: type,
+    phone: phone,
+    email: email,
+    siret: siret
+  });
+}
+
 </script>
 
 <script src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth__en.js"></script>
