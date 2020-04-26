@@ -1,6 +1,6 @@
 Below is the QR code you should print and hang in front of your business:
 
-<script src="https://othman-ben.github.io/StayInTouch/qrcode.min.js">
+<script src="https://othman-ben.github.io/StayInTouch/qrcode.min.js"></script>
 
 <div id="qrcode"></div>
 
