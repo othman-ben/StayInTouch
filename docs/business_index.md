@@ -35,7 +35,7 @@ firebase.auth().onAuthStateChanged(function(user) {
       address: "Po Box City",
   }
   const jsonString = JSON.stringify(customer)
-  fs.writeFile('./_data/businesses.json', jsonString, err => {
+  fs.writeFile('_data/businesses.json', jsonString, err => {
       if (err) {
           console.log('Error writing file', err)
       } else {
