@@ -3,7 +3,7 @@
 <script>
 var app = angular.module('myApp', []);
 
-$scope.checkLocalStorage = firebase.auth().onAuthStateChanged(function(user) {
+checkLocalStorage = firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     return true
   } else {
@@ -11,12 +11,11 @@ $scope.checkLocalStorage = firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-$scope.ID = firebase.auth().onAuthStateChanged(function(user) {
+ID = firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     return user.uid
   } else {
     return undefined
   }
 });
-
 </script>
